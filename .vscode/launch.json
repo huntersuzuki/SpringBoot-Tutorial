@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "HtmlrenderingApplication",
+      "request": "launch",
+      "mainClass": "com.pranay.htmlrendering.HtmlrenderingApplication",
+      "projectName": "htmlrendering"
+    },
+    {
+      "type": "java",
+      "name": "EvenoddApplication",
+      "request": "launch",
+      "mainClass": "com.pranay.evenodd.EvenoddApplication",
+      "projectName": "evenodd"
+    },
+    {
+      "type": "java",
+      "name": "HelloOneApplication",
+      "request": "launch",
+      "mainClass": "com.greet.hello_one.HelloOneApplication",
+      "projectName": "hello_one"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HelloApplication<hello>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.greet.hello.HelloApplication",
+      "projectName": "hello",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

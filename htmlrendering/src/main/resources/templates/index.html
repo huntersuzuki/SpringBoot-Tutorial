@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1 style="color: red" align="center">Welcome to SpringBoot</h1>
+
+    <b>Welcome</b>&nbsp;&nbsp;<span th:text="${Name}"></span>
+
+    <!-- <div th:if="${reslut}">
+      <strong>Number greater than 200</strong>
+    </div> -->
+
+    <div th:if="${res}">
+      <strong>Number is Even....</strong>
+    </div>
+    <div th:if="${resfalse}">
+      <strong>Number is Odd.....</strong>
+    </div>
+    <h1>Learning LOOP in thymeleaf</h1>
+    <div th:each="x:${list}">
+      <h4 th:text="${x}"></h4>
+    </div>
+  </body>
+</html>
