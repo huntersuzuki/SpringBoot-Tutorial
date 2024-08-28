@@ -11,7 +11,7 @@ public class MainController {
     int n = 15;
 
     @GetMapping("/home")
-    public String home(Model m) {
+    public String home(Model m) { // -> It's also called a request handler method.
         m.addAttribute("Name", "Pranay");
         // if (n > 200) {
         //     m.addAttribute("result", true);
@@ -54,6 +54,6 @@ public class MainController {
         System.out.println("number is "+num);
         return "checknumber";
     }
-
+    
     
 }
