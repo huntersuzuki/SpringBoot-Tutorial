@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Enquiry form</title>
+  </head>
+  <body>
+    <h1>Enquiry Form</h1>
+    <form action="" method="get" th:object="${employee}">
+      <table>
+        <tr>
+          <td>
+            <label for="Fname"><strong>First Name:</strong></label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Fname"
+              id="Fname"
+              th:field="*{FirstName}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Lname"><strong>Last Name:</strong></label>
+          </td>
+          <td>
+            <input type="text" name="Lname" id="Lname" th:field="*{LastName}" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email"><strong>Email:</strong></label>
+          </td>
+          <td>
+            <input type="email" name="email" id="email" th:field="*{Email}" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="mobno"><strong>Mobile No.</strong></label>
+          </td>
+          <td>
+            <input type="number" name="mobno" id="mobno" th:field="*{Mobile}" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
