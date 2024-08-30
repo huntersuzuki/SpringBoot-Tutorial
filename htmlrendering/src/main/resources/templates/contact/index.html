@@ -9,5 +9,20 @@
     <div class="header">
       <b><a href="/contact">Contact here</a></b>
     </div>
+    <h2 align="center">Contact Details</h2>
+    <table border="1" align="center" th:object="${contact}">
+      <tr>
+        <td>Name:</td>
+        <td th:text="${contact.name}"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td th:text="${contact.email}"></td>
+      </tr>
+      <tr>
+        <td>Mobile:</td>
+        <td th:text="${contact.mobile}"></td>
+      </tr>
+    </table>
   </body>
 </html>

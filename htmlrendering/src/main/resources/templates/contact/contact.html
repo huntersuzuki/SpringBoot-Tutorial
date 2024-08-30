@@ -8,7 +8,7 @@
   <body>    
     <h1 align="center" >Contact Form</h1>
     <!-- <p th:text="${contact}"></p> -->
-    <form action="" method="get" th:object="${contact}">
+    <form action="" th:action="@{contact}" method="post" th:object="${contact}">
       <table align="center">
         <tr>
           <td>Name:</td>
