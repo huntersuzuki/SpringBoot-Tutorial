@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Enquiry Form Redirection</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Student Enquiry Page Redirecting........</h1>
     <a href="/student"><h1>Click here</h1></a>
-</body>
+    <table th:object="${student}" border="2" align="center">
+      <thead>
+        <tr colspan="2">
+          <th>Student Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First Name:</td>
+          <td th:text="${student.FirstName}"></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td th:text="${student.LastName}"></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td th:text="${student.Email}"></td>
+        </tr>
+        <tr>
+          <td>Grade</td>
+          <td th:text="${student.STD}"></td>
+        </tr>
+        <tr>
+          <td>Complaint</td>
+          <td th:text="${student.Complaint}"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
