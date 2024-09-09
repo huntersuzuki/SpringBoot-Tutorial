@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School | StudentInfo</title>
+  </head>
+  <body>
+    <form
+      action=""
+      th:object="${student}"
+      th:action="${createstudent}"
+      method="post"
+    >
+      <table>
+        <thead>
+          <tr rowspan="2">
+            <th>Student Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" id="" th:field="*{name}" /></td>
+          </tr>
+          <tr>
+            <td>Student Roll Number</td>
+            <td>
+              <input type="number" name="rollnumber" id="" th:field="*{roll}" />
+            </td>
+          </tr>
+          <tr>
+            <td>Total Marks</td>
+            <td>
+              <input type="number" name="marks" id="" th:field="*{marks}" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Add student" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
