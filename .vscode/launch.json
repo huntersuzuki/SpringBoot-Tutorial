@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TodoappApplication",
+      "request": "launch",
+      "mainClass": "com.example.todoapp.TodoappApplication",
+      "projectName": "todoapp"
+    },
+    {
+      "type": "java",
       "name": "HtmlrenderingApplication",
       "request": "launch",
       "mainClass": "com.pranay.htmlrendering.HtmlrenderingApplication",
