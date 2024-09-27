@@ -18,22 +18,23 @@
   </head>
   <body>
     <div class="container">
-      <form action="" class="m-auto">
+      <form action="addtask"  th:object="${task}">
         <div class="row">
-          <div class="col-4">
+          <div class="col col-md-4">
             <label for="taskName">Task Name:</label>
             <input
               type="text"
               name="taskName"
               id="taskName"
               class="form-control"
+              th:field="*{taskName}"
             />
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col col-md-4">
             <label for="taskStatus">Task Status:</label>
-            <select name="taskStatus" id="taskStatus" class="form-select">
+            <select name="taskStatus" id="taskStatus" class="form-select" th:field="*{taskStatus}">
               <option value="started">Started</option>
               <option value="not started">Not Started</option>
               <option value="completed">Completed</option>
@@ -41,13 +42,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col col-md-4">
             <label for="taskDescription">Task Description:</label>
             <textarea
               id="taskDescription"
               name="taskDescription"
               rows="5"
               class="form-control"
+              th:field="*{taskDesription}"
             ></textarea>
           </div>
         </div>

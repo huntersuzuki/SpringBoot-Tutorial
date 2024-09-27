@@ -10,12 +10,21 @@ import com.example.todoapp.repositories.TaskRepository;
 public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
-    public Task geTask(){
-        Task task = new Task();
-        task.setTaskName("Learn Java");
-        task.setTaskStatus("Started");
-        task.setTaskDesription("Started the first chapter of Java");
+
+    //
+    public Iterable<Task> getAllTask() {
+        return taskRepository.findAll();
+    }
+
+    public void saveTask(Task task) {
         taskRepository.save(task);
-        return task;
+    }
+
+    public Task getTask(int id) {
+        return taskRepository.findById(id).get();
+    }
+
+    public void deleteTask(int id) {
+        taskRepository.deleteById(id);
     }
 }
