@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.todoapp.entities.Task;
 import com.example.todoapp.services.TaskService;
 
-
-
 @Controller
 public class TaskController {
 
@@ -22,7 +20,7 @@ public class TaskController {
     public String getTask(Model model) {
 
         model.addAttribute("tasklist", taskService.getAllTask());
-        model.addAttribute("myname", "Pranay");
+        // model.addAttribute("myname", "Pranay");
         return "index";
     }
 
@@ -43,7 +41,7 @@ public class TaskController {
     }
 
     @RequestMapping("/view/{id}")
-    public String requestMethodName(@PathVariable int id,Model model) {
+    public String requestMethodName(@PathVariable int id, Model model) {
         System.out.println("View " + id);
         model.addAttribute("task", taskService.getTask(id));
         return "viewtask";
@@ -54,6 +52,18 @@ public class TaskController {
         taskService.deleteTask(id);
         return "redirect:/";
     }
-    
+
+    @RequestMapping("/update/{id}")
+    public String updateTask(Model model, @PathVariable int id) {
+        Task task = taskService.getTask(id);
+        model.addAttribute("task", task);
+        return "updatetask";
+    }
+
+    @RequestMapping("updatetask")
+    public String updateTaskDone(@ModelAttribute Task task) {
+        taskService.updateTask(task);
+        return "redirect:/";
+    }
 
 }
