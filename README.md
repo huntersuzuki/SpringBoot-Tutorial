@@ -1,87 +1,91 @@
 # Spring Boot Learning Repository
 
-Welcome to my Spring Boot learning repository! This repository documents my journey of learning Spring Boot and developing various applications to strengthen my skills. Below is an overview of the projects and features implemented.
+Welcome to my Spring Boot learning repository! This repository captures my progress and experiments with Spring Boot through various projects, each designed to explore different features and functionalities of the framework.
 
 ## Table of Contents
 
-- [Projects Overview](#projects-overview)
+- [Overview of Projects](#overview-of-projects)
+- [Project Descriptions](#project-descriptions)
 - [Contributions](#contributions)
 - [License](#license)
 
-## Projects Overview
+## Overview of Projects
+
+| Project Name      | Commit Description                                             | Timeline       |
+|-------------------|---------------------------------------------------------------|----------------|
+| Armstrong         | First commit                                                  | 5 months ago   |
+| Commasum          | First commit                                                  | 5 months ago   |
+| Ecommerceapp      | Ecommerce app with new annotations and features              | 3 months ago   |
+| Employee          | Added MySQL database connection and used JPA to create table | 4 months ago   |
+| Evenodd           | First commit                                                  | 5 months ago   |
+| GCD               | First commit                                                  | 5 months ago   |
+| Hello_One         | Updated file, accessed and displayed form data                | 5 months ago   |
+| Htmlrendering     | Converted Java class to table and columns using JPA           | 4 months ago   |
+| LCM               | First commit                                                  | 5 months ago   |
+| Posneg            | First commit                                                  | 5 months ago   |
+| Restapidemo       | Updated controller and service class                          | 3 months ago   |
+| Schoolapp         | Used annotations and CrudRepository to insert MySQL data      | 4 months ago   |
+| Simpleinterest    | First commit                                                  | 5 months ago   |
+| Student           | Configured Java application to connect to MySQL server       | 4 months ago   |
+| Summation         | First commit                                                  | 5 months ago   |
+| Todoapp           | New REST API application in Spring Boot                      | 3 months ago   |
+| Wepost            | First commit                                                  | 5 months ago   |
+
+## Project Descriptions
 
 ### Armstrong
-**Commit:** First commit
-**Description:** A simple application to check Armstrong numbers.
+A simple application to check Armstrong numbers.
 
 ### Commasum
-**Commit:** First commit
-**Description:** A basic application to calculate the summation of numbers separated by commas.
+Calculates the summation of numbers separated by commas.
 
 ### Ecommerceapp
-**Commit:** Ecommerce app and implemented new annotations and features (3 months ago)
-**Description:** An e-commerce application demonstrating new annotations and Spring Boot features.
+A fully functional e-commerce application demonstrating advanced Spring Boot annotations and features.
 
 ### Employee
-**Commit:** Added MySQL database connection and used JPA to create a table (4 months ago)
-**Description:** A project showcasing integration with MySQL and table creation using JPA.
+Integrates MySQL database with Spring Boot and uses JPA to create tables programmatically.
 
 ### Evenodd
-**Commit:** First commit
-**Description:** A simple application to check if a number is even or odd.
+Determines whether a given number is even or odd.
 
 ### GCD
-**Commit:** First commit
-**Description:** A basic program to calculate the greatest common divisor of two numbers.
+Computes the greatest common divisor (GCD) of two numbers.
 
 ### Hello_One
-**Commit:** Updated file, form data accessing, and displaying (5 months ago)
-**Description:** A project demonstrating form data submission and rendering in a Spring Boot application.
+Illustrates how to access and display form data in a Spring Boot application.
 
 ### Htmlrendering
-**Commit:** Converted Java class to table and columns using JPA (4 months ago)
-**Description:** Demonstrates the use of JPA (ORM) to map Java classes to database tables and columns.
+Uses JPA (Object-Relational Mapping) to convert Java classes into database tables and columns.
 
 ### LCM
-**Commit:** First commit
-**Description:** A program to calculate the least common multiple of two numbers.
+Calculates the least common multiple (LCM) of two numbers.
 
 ### Posneg
-**Commit:** First commit
-**Description:** A basic application to determine if a number is positive or negative.
+Identifies whether a given number is positive or negative.
 
 ### Restapidemo
-**Commit:** Updated controller and service class (3 months ago)
-**Description:** A demonstration of REST API development in Spring Boot.
+A basic REST API implementation with updated controller and service classes.
 
 ### Schoolapp
-**Commit:** Used annotations and CrudRepository class to insert data into MySQL (4 months ago)
-**Description:** A CRUD application for managing school-related data using Spring Boot annotations and `CrudRepository`.
+Demonstrates CRUD operations with MySQL using Spring Boot annotations and `CrudRepository`.
 
 ### Simpleinterest
-**Commit:** First commit
-**Description:** A simple application to calculate the simple interest for given inputs.
+Computes simple interest based on user-provided input.
 
 ### Student
-**Commit:** Added configurations to connect the Java application to MySQL server (4 months ago)
-**Description:** Demonstrates database configuration and connection with MySQL.
+Configures a Java application to connect and interact with a MySQL database.
 
 ### Summation
-**Commit:** First commit
-**Description:** A program to calculate the summation of a series of numbers.
+Calculates the summation of a series of numbers.
 
 ### Todoapp
-**Commit:** New REST API application in Spring Boot (3 months ago)
-**Description:** A basic to-do application with REST API endpoints.
+Implements a to-do list application with REST API functionality.
 
 ### Wepost
-**Commit:** First commit
-**Description:** A project currently under development.
-
----
+A project currently under development.
 
 ## Contributions
-Feel free to explore the repository and suggest improvements by opening issues or submitting pull requests.
+I welcome feedback and contributions to this repository. If you have ideas for improvement or new features, feel free to open issues or submit pull requests.
 
 ## License
-This repository is licensed under the MIT License.
+This repository is licensed under the MIT License. Feel free to use the code as per the terms of the license.
